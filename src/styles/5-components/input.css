@@ -1,0 +1,32 @@
+.input {
+  accent-color: var(--primary);
+}
+
+.input:not([type="radio"], [type="checkbox"]) {
+  height: var(--spacing-10);
+  padding: var(--spacing-2) var(--spacing-3);
+  color: var(--foreground);
+  border-radius: var(--rounded-md, 6px);
+  border: 1px solid var(--border);
+  background: var(--background);
+  font-size: var(--font-sm);
+  line-height: var(--leading-6);
+}
+.input:disabled {
+  opacity: 0.5;
+}
+
+.input::placeholder {
+  color: var(--muted-foreground);
+}
+.input::file-selector-button {
+  padding: 0rem 0.25rem;
+  border: none;
+  background-color: var(--background);
+  border-radius: var(--rounded);
+  color: var(--foreground);
+
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+}

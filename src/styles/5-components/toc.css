@@ -1,0 +1,35 @@
+.toc__general {
+  display: flex;
+  gap: var(--spacing-2);
+  max-width: 896px;
+  margin-inline: auto;
+  align-items: flex-start;
+}
+.toc {
+  width: 224px;
+  padding: 16px 16px 0px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-2 8px);
+  background-color: var(--background);
+
+  position: sticky;
+  top: 96px;
+}
+
+.toc__tittle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 920px) {
+  .toc {
+    display: block;
+  }
+  .toc {
+    display: none;
+  }
+}

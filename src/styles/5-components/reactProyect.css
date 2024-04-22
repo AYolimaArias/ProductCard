@@ -1,0 +1,173 @@
+.counter_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: var(--spacing-2) var(--spacing-4);*/
+  padding-bottom: var(--spacing-2);
+  width: 371px;
+  height: 200px;
+  background-color: var(--white);
+  border-radius: var(--rounded-xl);
+  box-shadow: 0 4px 4px #00000040;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-10);
+}
+.flter-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-template-rows: auto;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-7);
+}
+
+.pokemon-cards {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-top: var(--spacing-2);
+  background-color: var(--muted);
+  border-radius: var(--rounded-xl);
+}
+.title {
+  font-family: var(--text);
+  font-size: var(--font-base);
+  font-weight: 400;
+  line-height: var(--leading-7);
+  color: var(--foreground);
+  text-align: center;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.description {
+  font-family: var(--text);
+  font-size: var(--font-sm);
+  font-weight: 400;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin-top: 0px !important;
+}
+.filter-content {
+  display: block;
+  text-align: center;
+}
+
+#opciones {
+  width: 300px;
+  padding-block: var(--spacing-2);
+  border-radius: var(--spacing-2);
+  border: solid 1px var(--neutral-400);
+}
+/* display button */
+.display {
+  font-weight: 900;
+  font-size: 35px;
+  color: var(--violet-700);
+  margin: 0 !important;
+}
+.container_display {
+  margin: 0 !important;
+  text-align: center;
+}
+.counter_title {
+  color: var(--neutral-500);
+}
+.content > p {
+  text-align: justify;
+}
+
+/*-----SHOPPING CART------*/
+
+.shopping-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-template-rows: auto;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-7);
+  width: 500px;
+}
+
+.shopping-cards {
+  height: 222px;
+  width: 160px;
+  border-radius: var(--spacing-4);
+  border: 1px solid gray;
+  position: relative;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: var(--spacing-10);
+  margin-block: 0px !important;
+}
+.display-shop {
+}
+
+.category {
+  position: absolute;
+  right: 5px;
+
+  margin-block: 0px !important;
+  background-color: var(--neutral-300);
+  border-radius: var(--spacing-1);
+}
+
+.container_products {
+  display: flex;
+  flex-direction: row;
+  /* grid-template-columns: repeat(2, 1fr); */
+  column-gap: var(--spacing-4);
+}
+.img-card {
+  height: 90px;
+  width: 90px;
+  margin-left: var(--spacing-9);
+  padding-right: var(--spacing-2);
+  margin-bottom: 0px !important;
+}
+.description-price {
+  font-family: var(--text);
+  font-size: var(--font-sm);
+  font-weight: 400;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin-block: 0px !important;
+}
+/*-----CART------*/
+
+.content-cart {
+  max-width: 200px;
+
+  background-color: var(--neutral-100);
+  z-index: 2;
+}
+.button-cart {
+  display: inline-flex;
+  height: 2.5rem;
+  padding: var(--spacing-1_5) var(--spacing-2);
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid transparent;
+  border-radius: var(--rounded-md);
+  background-color: var(--violet-600);
+  cursor: pointer;
+
+  font-size: var(--font-sm);
+  color: var(--primary-foreground);
+  line-height: var(--leading-5);
+  font-weight: 500;
+  color: var(--neutral-950);
+  margin: var(--spacing-1);
+}

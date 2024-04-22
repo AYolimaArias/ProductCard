@@ -1,0 +1,46 @@
+.barra-lado{
+  display: none;
+}
+
+@media (min-width: 64rem) { 
+  .backs-flex{
+    display: flex;
+    max-width: var(--width-4xl);
+    margin: 0 auto;
+    align-items: flex-start; /*Añadi el flex-start para q funcione sticky*/
+  }
+ 
+  .barra-lado{
+    display: block;
+    flex-grow: 1;
+    padding: var(--spacing-4)  var(--spacing-4) 0 0;
+    margin-top: 6rem;
+    display: block;
+    /* Solo con esto no funciona , porque como 
+    es display flex , ocupa todo el alto del contenido
+    y un sticky pues tiene que tener un algo definido
+    para que funcione como tal , tendriamos que agregar
+    align-item:flex-start , velo arriba*/
+    position: sticky; 
+    top: 96px;
+  }
+}
+
+.barra-lado__text{
+  color: var(--muted-foreground);
+  font-size: var(--font-sm);
+  margin-bottom: var(--spacing-1);
+}
+
+.barra-lado li{
+  list-style: none;
+  margin-bottom: var(--spacing-1);
+ 
+}
+
+.barra-lado__link{
+  text-decoration: none;
+  color: var(--foreground);
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
